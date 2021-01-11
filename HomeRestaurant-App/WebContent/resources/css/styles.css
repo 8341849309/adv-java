@@ -1,0 +1,12 @@
+.items{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+td,th{
+	border: solid 2px blue;
+	padding: 15px 20px;
+}
+td{
+	font-style: italic;
+}
