@@ -1,0 +1,18 @@
+CREATE TABLE `advjava`.`admin` (
+  `ADMINUSERNAME` VARCHAR(20) NOT NULL,
+  `ADMINPASSWORD` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`ADMINUSERNAME`),
+  UNIQUE INDEX `USERNAME_UNIQUE` (`ADMINUSERNAME` ASC) VISIBLE);
+  
+  CREATE TABLE `advjava`.`employee` (
+  `empId` INT(10) NOT NULL,
+  `empName` VARCHAR(45) NOT NULL,
+  `address` VARCHAR(45) NULL,
+  `phone` INT(10) NULL,
+  `email` VARCHAR(20) NULL,
+  `salary` FLOAT NULL,
+  `username` VARCHAR(20) NOT NULL,
+  `password` VARCHAR(20) NULL,
+  PRIMARY KEY (`empId`),
+  UNIQUE INDEX `empId_UNIQUE` (`empId` ASC) VISIBLE);
+

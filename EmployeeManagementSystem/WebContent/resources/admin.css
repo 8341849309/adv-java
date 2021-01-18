@@ -1,0 +1,50 @@
+body {
+	background: #f6f7f1;
+}
+
+.dashboard {
+	background: #0b032d;
+	color: white;
+	height: 50px;
+}
+
+.dashboard h2,a {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.dashboard a {
+	padding-left: 1100px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+.search {
+	margin: 50px 10%;
+}
+
+.search form {
+	margin-left: 70%;
+}
+
+.search h2 {
+	margin-left: 65%;
+}
+
+.content {
+	height: auto;
+	width: 60%;
+	margin: 0% 37% 20% 3%;
+}
+
+td, th {
+  text-align: left;
+  padding-bottom: 20px;
+  widows: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
