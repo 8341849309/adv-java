@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  
+  <servlet>
+  	<servlet-name>Plain</servlet-name>
+  	<servlet-class>com.servlet.PlainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Plain</servlet-name>
+  	<url-pattern>/Plain</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Html</servlet-name>
+  	<servlet-class>com.servlet.HtmlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Html</servlet-name>
+  	<url-pattern>/Html</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Excel</servlet-name>
+  	<servlet-class>com.servlet.ExcelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Excel</servlet-name>
+  	<url-pattern>/Excel</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Word</servlet-name>
+  	<servlet-class>com.servlet.WordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Word</servlet-name>
+  	<url-pattern>/Word</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Xml</servlet-name>
+  	<servlet-class>com.servlet.XmlServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Xml</servlet-name>
+  	<url-pattern>/Xml</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>PDF</servlet-name>
+  	<servlet-class>com.servlet.PDFServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PDF</servlet-name>
+  	<url-pattern>/PDF</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
