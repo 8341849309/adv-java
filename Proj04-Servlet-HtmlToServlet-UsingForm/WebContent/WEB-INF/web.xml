@@ -15,5 +15,4 @@
   	<url-pattern>/checkAge</url-pattern>
   </servlet-mapping>
   
-  
 </web-app>
