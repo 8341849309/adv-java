@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+function validate(form) {
+	let name = form.name.value;
+	let age = form.age.value;
+	let vflag = form.age.value;
+
+	if (name == "" || name.length < 6) {
+		document.querySelector('#nameErr').innerHTML = "Name Should not be empty or <6 chars";
+		form.name.focus();
+		return false;
+	} else if (age=="" || isNaN(age)) {
+		document.querySelector('#ageErr').innerHTML = "Age Should not be empty and a number";
+		form.name.focus();
+		return false;
+	}
+	
+	document.querySelector('#vflag').value="yes";
+console.log(form.vflag.value);
+	return true;
+}
+</script>
+
+</head>
+<body bgcolor="pink">
+
+	<form action="checkAge" method="post" onsubmit="return validate(this)">
+		<table style="text-align: center">
+			<tr>
+				<h3 style="color: red; text-align: center">HTML to Servlet
+					Communication Using Forms</h3>
+			</tr>
+			<tr>
+				<h1 style="color: red; text-align: center">Election Commission
+					Of India</h1>
+			</tr>
+			<tr>
+				<td>Person Name::</td>
+				<td><input type="text" name="name"></td>
+				<td><span style="color:red" id="nameErr"></span></td>
+			</tr>
+			<tr>
+				<td>Person Age::</td>
+				<td><input type="text" name="age"></td>
+				<td><span style="color:red" id="ageErr"></span></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Submit"></td>
+				<td><input type="reset" value="Cancel"></td>
+				<td><input type="hidden" name="vflag" id="vflag" value="no"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>

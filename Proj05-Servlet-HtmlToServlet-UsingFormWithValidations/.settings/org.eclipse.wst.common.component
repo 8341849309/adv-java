@@ -11,7 +11,7 @@
                         
         
         <property name="java-output-path" value="/Proj03-Servlet-HtmlToServlet-UsingHyperLinks/build/classes"/>
-        <property name="context-root" value="Proj04-Servlet-HtmlToServlet-UsingForm"/>
+        <property name="context-root" value="Proj05-Servlet-HtmlToServlet-UsingFormWithValidations"/>
                     
     
     </wb-module>
